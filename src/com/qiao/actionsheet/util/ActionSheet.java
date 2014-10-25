@@ -133,7 +133,7 @@ public class ActionSheet extends RelativeLayout {
         actionSheetView.setVisibility(View.VISIBLE);
         actionSheetView.removeAllViews();
         
-        if(!title.trim().equals("")&&null!=title){
+        if(null!=title&&!title.trim().equals("")){
         	titleTextView = new TextView(getContext());
         	titleTextView.setBackgroundColor(Color.TRANSPARENT);
         	titleTextView.setGravity(Gravity.CENTER);
