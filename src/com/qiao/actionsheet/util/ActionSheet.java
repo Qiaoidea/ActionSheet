@@ -2,8 +2,9 @@
 package com.qiao.actionsheet.util;
 
 import com.qiao.actionsheet.R;
-import com.qiao.actionsheet.util.MaskView.MaskListener;
 import com.qiao.actionsheet.util.Method.Action1;
+import com.qiao.actionsheet.view.MaskView;
+import com.qiao.actionsheet.view.MaskView.MaskListener;
 
 import android.content.Context;
 import android.graphics.Color;

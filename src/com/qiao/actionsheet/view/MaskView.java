@@ -1,8 +1,9 @@
 
-package com.qiao.actionsheet.util;
+package com.qiao.actionsheet.view;
 
 import android.content.Context;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
@@ -10,13 +11,13 @@ import android.widget.RelativeLayout;
 
 public class MaskView extends RelativeLayout {
 
-    protected RelativeLayout targetView;
+    protected ViewGroup targetView;
     protected boolean isShowing;
     protected long durationMillis;
     protected boolean canCancel;
     protected MaskListener maskListener;
 
-    public MaskView(Context context, RelativeLayout targetView) {
+    public MaskView(Context context, ViewGroup targetView) {
         super(context);
         this.targetView = targetView;
         initialize();
@@ -25,7 +26,7 @@ public class MaskView extends RelativeLayout {
     protected void initialize() {
         setBackgroundColor(0x88000000);
         setVisibility(View.GONE);
-        LayoutParams lp = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
+        LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         targetView.addView(this, lp);
         setOnClickListener(new OnClickListener() {
             @Override
