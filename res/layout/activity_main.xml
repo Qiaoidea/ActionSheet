@@ -37,7 +37,7 @@
                 android:layout_width="200dip"
                 android:layout_height="200dip"
                 android:padding="10dip"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/menu0" />
 
             <TextView
@@ -52,7 +52,7 @@
                 android:layout_width="200dip"
                 android:layout_height="200dip"
                 android:padding="10dip"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/menu1" />
         </LinearLayout>
 
