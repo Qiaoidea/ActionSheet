@@ -9,7 +9,7 @@
 
 ![](http://upload-images.jianshu.io/upload_images/125949-8310bcf4d6e63e25.jpg)
 
-后来,在此基础上，整合了[]()的AcitonSheet，添加了带title通用性更强但是耦合性稍差的新样式菜单
+后来,在此基础上，整合了![baoyz]()的AcitonSheet，添加了带title通用性更强但是耦合性稍差的新样式菜单
 
 ![IOS6](http://upload-images.jianshu.io/upload_images/125949-e9e32abc216b6821.png)
 
@@ -21,6 +21,7 @@
 #如何使用
 ---
 项目本身体积不大，可以引用库或者直接拷贝至自己的项目中去，使用方法很简单
+
 1.第一种顶部弹出菜单ActionSheetLayout。
     ActionSheetLayout就当做普通的linearlayout来使用，然后调用
     布局中xml
@@ -57,9 +58,9 @@
 			}
 		});
 
-3.使用bao兄的Actionsheet整改后的
+3.使用baoyz兄的Actionsheet整改后的
 具体使用见代码demo
-
+```
 		baoyz.qiao.actionsheet.ActionSheet.init(this)
 				.setTitle("This is test title ,do you want do something？")
 				.setTheme(resid)
@@ -80,6 +81,7 @@
 //					}
 //				})
 				.show();
+```
 
 其中setTheme()参数可选 R.style.ActionSheetStyleIOS6 或 R.style.ActionSheetStyleIOS6 。不设置则默认为 R.style.ActionSheetStyleIOS7。注：
 + 不设置setTitle则为无title样式
