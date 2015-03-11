@@ -5,6 +5,7 @@
 包含两种界面，四种样式：
 
 1.顶部下拉菜单
+
 ![](http://upload-images.jianshu.io/upload_images/125949-db227cd950489727.jpg)
 2.底部弹出式ActionSheet菜单
 
