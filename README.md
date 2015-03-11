@@ -9,7 +9,7 @@
 
 ![](http://upload-images.jianshu.io/upload_images/125949-8310bcf4d6e63e25.jpg)
 
-后来,在此基础上，整合了![baoyz]()的AcitonSheet，添加了带title通用性更强但是耦合性稍差的新样式菜单
+后来,在此基础上，整合了![baoyz](https://github.com/baoyongzhang/ActionSheetForAndroid)的AcitonSheet，添加了带title通用性更强但是耦合性稍差的新样式菜单
 
 ![IOS6](http://upload-images.jianshu.io/upload_images/125949-e9e32abc216b6821.png)
 
