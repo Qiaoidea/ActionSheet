@@ -16,108 +16,131 @@
         android:textColor="#000"
         android:textSize="18sp" />
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="10dip"
-                android:text="①按菜单键呼出顶部菜单menu0" />
-
-            <ImageView
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:padding="10dip"
-                android:scaleType="fitCenter"
-                android:src="@drawable/menu0" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dip"
-                android:gravity="center_horizontal"
-                android:padding="10dip"
-                android:text="②按返回键呼出底部菜单menu1" />
-
-            <ImageView
-                android:layout_width="200dip"
-                android:layout_height="200dip"
-                android:padding="10dip"
-                android:scaleType="fitCenter"
-                android:src="@drawable/menu1" />
-        </LinearLayout>
-
-        <com.qiao.actionsheet.view.ActionSheetLayout
-            android:id="@+id/action_sheet_layout"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:id="@+id/action_sheet_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#fff"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
                 android:orientation="vertical" >
 
-                <LinearLayout
-                    android:id="@+id/group_new_view"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#f8f8f8"
-                    android:gravity="center_vertical"
-                    android:padding="14dip" >
+                    android:gravity="center_horizontal"
+                    android:padding="10dip"
+                    android:text="①按菜单键呼出顶部菜单menu0" />
 
-                    <ImageView
-                        android:layout_width="30dip"
-                        android:layout_height="30dip"
-                        android:background="#72c6" />
+                <ImageView
+                    android:id="@+id/fromtop"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:padding="10dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu0" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dip"
-                        android:text="菜单一"
-                        android:textColor="#000"
-                        android:textSize="16dip" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="#e4e4e4" />
-
-                <LinearLayout
-                    android:id="@+id/group_join_view"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#f8f8f8"
-                    android:gravity="center_vertical"
-                    android:padding="14dip" >
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:padding="10dip"
+                    android:text="②按返回键呼出底部菜单menu1" />
 
-                    <ImageView
-                        android:layout_width="30dip"
-                        android:layout_height="30dip"
-                        android:background="#72c6" />
+                <ImageView
+                    android:id="@+id/frombottom"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:padding="10dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu1" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dip"
-                        android:text="菜单二"
-                        android:textColor="#000"
-                        android:textSize="16dip" />
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal"
+                    android:padding="10dip"
+                    android:text="③点击图片呼出底部菜单menu样式" />
+
+                <ImageView
+                    android:id="@+id/fromios"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:padding="10dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu2" />
             </LinearLayout>
-        </com.qiao.actionsheet.view.ActionSheetLayout>
-    </FrameLayout>
+
+            <com.qiao.actionsheet.view.ActionSheetLayout
+                android:id="@+id/action_sheet_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/action_sheet_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ios6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f8f8f8"
+                        android:gravity="center_vertical"
+                        android:padding="14dip" >
+
+                        <ImageView
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="#72c6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dip"
+                            android:text="IOS6样式"
+                            android:textColor="#000"
+                            android:textSize="16dip" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#e4e4e4" />
+
+                    <LinearLayout
+                        android:id="@+id/ios7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f8f8f8"
+                        android:gravity="center_vertical"
+                        android:padding="14dip" >
+
+                        <ImageView
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:background="#72c6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dip"
+                            android:text="IOS7样式"
+                            android:textColor="#000"
+                            android:textSize="16dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.qiao.actionsheet.view.ActionSheetLayout>
+        </FrameLayout>
+    </ScrollView>
 
 </LinearLayout>
