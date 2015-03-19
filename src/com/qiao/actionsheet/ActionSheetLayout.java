@@ -1,14 +1,15 @@
-package com.qiao.actionsheet.view;
+package com.qiao.actionsheet;
 
-
-import com.qiao.actionsheet.R;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
+
+import com.qiao.actionsheet.R;
 
 public class ActionSheetLayout extends FrameLayout {
 
@@ -80,10 +81,13 @@ public class ActionSheetLayout extends FrameLayout {
 		TranslateAnimation an = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF, -1);
 		an.setFillAfter(true);
 		an.setDuration(durationMillis);
-		an.setAnimationListener(new EmptyAnimationListener() {
+		an.setAnimationListener(new AnimationListener() {
+			@Override
+			public void onAnimationStart(Animation animation) {}
+			@Override
+			public void onAnimationRepeat(Animation animation) {}
 			@Override
 			public void onAnimationEnd(Animation animation) {
-				super.onAnimationEnd(animation);
 				setVisibility(View.INVISIBLE);
 			}
 		});

@@ -9,10 +9,10 @@ import android.view.View.OnClickListener;
 import android.widget.Toast;
 import baoyz.qiao.actionsheet.ActionSheet.ItemClikListener;
 
+import com.qiao.actionsheet.ActionSheet;
+import com.qiao.actionsheet.ActionSheet.Action1;
+import com.qiao.actionsheet.ActionSheetLayout;
 import com.qiao.actionsheet.R;
-import com.qiao.actionsheet.util.Method.Action1;
-import com.qiao.actionsheet.view.ActionSheet;
-import com.qiao.actionsheet.view.ActionSheetLayout;
 
 public class MainActivity extends Activity implements OnClickListener{
 

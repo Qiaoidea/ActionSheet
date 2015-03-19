@@ -1,7 +1,8 @@
 
-package com.qiao.actionsheet.view;
+package com.qiao.actionsheet;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.util.AttributeSet;
@@ -22,10 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.qiao.actionsheet.R;
-import com.qiao.actionsheet.util.Method.Action1;
-import com.qiao.actionsheet.util.UnitConverter;
-import com.qiao.actionsheet.view.MaskView.MaskListener;
-
+import com.qiao.actionsheet.MaskView.MaskListener;
 
 public class ActionSheet extends RelativeLayout {
     protected final static long durationMillis = 200;
@@ -67,7 +65,7 @@ public class ActionSheet extends RelativeLayout {
 
         actionSheetView = new LinearLayout(getContext());
         actionSheetView.setOrientation(LinearLayout.VERTICAL);
-        int pad = (int) UnitConverter.applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 20);
+        int pad = (int) applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 20);
         actionSheetView.setPadding(pad, pad, pad, pad);
 //        actionSheetView.setBackgroundResource(R.drawable.actionsheet_background);
         actionSheetView.setBackgroundColor(0x80000000);
@@ -127,7 +125,7 @@ public class ActionSheet extends RelativeLayout {
 
         maskView.show();
 
-        int mrg = (int) UnitConverter.applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 10);
+        int mrg = (int) applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 10);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         lp.setMargins(0, mrg, 0, mrg);
 
@@ -197,7 +195,7 @@ public class ActionSheet extends RelativeLayout {
 
         maskView.show();
 
-        int mrg = (int) UnitConverter.applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 5);
+        int mrg = (int) applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 5);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         lp.setMargins(0, mrg, 0, mrg);
 
@@ -273,5 +271,14 @@ public class ActionSheet extends RelativeLayout {
             }
         });
         actionSheetView.startAnimation(an);
+    }
+    
+    public static float applyDimension(Context context, int unit, float size) {
+        Resources r = context.getResources();
+        return TypedValue.applyDimension(unit, size, r.getDisplayMetrics());
+    }
+    
+    public interface Action1<T1> {
+        void invoke(T1 p);
     }
 }

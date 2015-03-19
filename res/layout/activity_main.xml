@@ -78,7 +78,7 @@
                     android:src="@drawable/menu2" />
             </LinearLayout>
 
-            <com.qiao.actionsheet.view.ActionSheetLayout
+            <com.qiao.actionsheet.ActionSheetLayout
                 android:id="@+id/action_sheet_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -139,7 +139,7 @@
                             android:textSize="16dip" />
                     </LinearLayout>
                 </LinearLayout>
-            </com.qiao.actionsheet.view.ActionSheetLayout>
+            </com.qiao.actionsheet.ActionSheetLayout>
         </FrameLayout>
     </ScrollView>
 
