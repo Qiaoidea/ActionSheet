@@ -1,5 +1,5 @@
 
-package com.qiao.actionsheet;
+package com.qiao.actionsheet.ios6;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -22,8 +22,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.qiao.actionsheet.MaskView;
 import com.qiao.actionsheet.R;
 import com.qiao.actionsheet.MaskView.MaskListener;
+import com.qiao.actionsheet.R.drawable;
 
 public class ActionSheet extends RelativeLayout {
     protected final static long durationMillis = 200;
@@ -202,7 +204,7 @@ public class ActionSheet extends RelativeLayout {
         actionSheetView.setVisibility(View.VISIBLE);
         actionSheetView.removeAllViews();
         
-        if(!title.trim().equals("")&&null!=title){
+        if(null!=title&&!title.trim().equals("")){
         	titleTextView = new TextView(getContext());
         	titleTextView.setBackgroundColor(Color.TRANSPARENT);
         	titleTextView.setGravity(Gravity.CENTER);

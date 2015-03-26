@@ -7,10 +7,10 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
-import baoyz.qiao.actionsheet.ActionSheet.ItemClikListener;
 
-import com.qiao.actionsheet.ActionSheet;
-import com.qiao.actionsheet.ActionSheet.Action1;
+import com.qiao.actionsheet.baoyz.ActionSheet.ItemClikListener;
+import com.qiao.actionsheet.ios6.ActionSheet;
+import com.qiao.actionsheet.ios6.ActionSheet.Action1;
 import com.qiao.actionsheet.ActionSheetLayout;
 import com.qiao.actionsheet.R;
 
@@ -71,14 +71,14 @@ public class MainActivity extends Activity implements OnClickListener{
     }
 
 	public void showActionSheet(int resid) {
-		baoyz.qiao.actionsheet.ActionSheet.init(this)
+		com.qiao.actionsheet.baoyz.ActionSheet.init(this)
 				.setTitle("This is test title ,do you want do something？")
 				.setTheme(resid)
 				.setItemTexts("Item1", "Item2", "Item3", "Item4")
 				.setItemClickListener(new ItemClikListener() {
 					@Override
 					public void onitemClick(
-							baoyz.qiao.actionsheet.ActionSheet actionSheet,
+							com.qiao.actionsheet.baoyz.ActionSheet actionSheet,
 							int index) {
 						Toast.makeText(getApplicationContext(), "click item index = " + index,0).show();
 					}
