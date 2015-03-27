@@ -135,24 +135,26 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int as_bg_ios6=0x7f02001d;
         public static final int as_cancel_bt_bg=0x7f02001e;
         public static final int as_other_bt_bg=0x7f02001f;
-        public static final int ic_launcher=0x7f020020;
-        public static final int menu0=0x7f020021;
-        public static final int menu1=0x7f020022;
-        public static final int menu2=0x7f020023;
-        public static final int slt_as_ios7_cancel_bt=0x7f020024;
-        public static final int slt_as_ios7_other_bt_bottom=0x7f020025;
-        public static final int slt_as_ios7_other_bt_middle=0x7f020026;
-        public static final int slt_as_ios7_other_bt_single=0x7f020027;
-        public static final int slt_as_ios7_other_bt_top=0x7f020028;
+        public static final int btn_more=0x7f020020;
+        public static final int ic_launcher=0x7f020021;
+        public static final int menu0=0x7f020022;
+        public static final int menu1=0x7f020023;
+        public static final int menu2=0x7f020024;
+        public static final int slt_as_ios7_cancel_bt=0x7f020025;
+        public static final int slt_as_ios7_other_bt_bottom=0x7f020026;
+        public static final int slt_as_ios7_other_bt_middle=0x7f020027;
+        public static final int slt_as_ios7_other_bt_single=0x7f020028;
+        public static final int slt_as_ios7_other_bt_top=0x7f020029;
     }
     public static final class id {
-        public static final int action_sheet_container=0x7f070004;
-        public static final int action_sheet_layout=0x7f070003;
-        public static final int frombottom=0x7f070001;
-        public static final int fromios=0x7f070002;
-        public static final int fromtop=0x7f070000;
-        public static final int ios6=0x7f070005;
-        public static final int ios7=0x7f070006;
+        public static final int action_sheet_container=0x7f070005;
+        public static final int action_sheet_layout=0x7f070004;
+        public static final int btn_more=0x7f070000;
+        public static final int frombottom=0x7f070002;
+        public static final int fromios=0x7f070003;
+        public static final int fromtop=0x7f070001;
+        public static final int ios6=0x7f070006;
+        public static final int ios7=0x7f070007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

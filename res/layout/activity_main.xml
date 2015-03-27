@@ -6,15 +6,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0072c6"
-        android:gravity="center"
-        android:padding="10dip"
-        android:text="@string/app_name"
-        android:textColor="#000"
-        android:textSize="18sp" />
+        android:background="#0072c6" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dip"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        
+        <ImageView 
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/btn_more"
+            android:padding="10dip"/>
+    </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -78,7 +91,7 @@
                     android:src="@drawable/menu2" />
             </LinearLayout>
 
-            <com.qiao.actionsheet.ActionSheetLayout
+            <com.qiao.actionsheet.linearlayout.ActionSheetLayout
                 android:id="@+id/action_sheet_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -101,7 +114,7 @@
                         <ImageView
                             android:layout_width="30dip"
                             android:layout_height="30dip"
-                            android:background="#72c6" />
+							android:src="@drawable/ic_launcher"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -128,7 +141,7 @@
                         <ImageView
                             android:layout_width="30dip"
                             android:layout_height="30dip"
-                            android:background="#72c6" />
+							android:src="@drawable/ic_launcher"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -139,7 +152,7 @@
                             android:textSize="16dip" />
                     </LinearLayout>
                 </LinearLayout>
-            </com.qiao.actionsheet.ActionSheetLayout>
+            </com.qiao.actionsheet.linearlayout.ActionSheetLayout>
         </FrameLayout>
     </ScrollView>
 

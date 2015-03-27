@@ -22,10 +22,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qiao.actionsheet.MaskView;
 import com.qiao.actionsheet.R;
-import com.qiao.actionsheet.MaskView.MaskListener;
 import com.qiao.actionsheet.R.drawable;
+import com.qiao.actionsheet.linearlayout.MaskView;
+import com.qiao.actionsheet.linearlayout.MaskView.MaskListener;
 
 public class ActionSheet extends RelativeLayout {
     protected final static long durationMillis = 200;

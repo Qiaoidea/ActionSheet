@@ -1,4 +1,4 @@
-package com.qiao.actionsheet;
+package com.qiao.actionsheet.linearlayout;
 
 
 import android.content.Context;
@@ -17,6 +17,7 @@ public class ActionSheetLayout extends FrameLayout {
 	protected MaskView maskView;
 	protected View actionSheetContainer;
 	protected boolean isShow = false;
+	protected OnCancelListener CancelListener;
 
 	public ActionSheetLayout(Context context) {
 		super(context);
@@ -41,6 +42,8 @@ public class ActionSheetLayout extends FrameLayout {
 			public void onClick(View v) {
 				if(isShow){
 					hide();
+					if(CancelListener!=null)
+						CancelListener.onCancel();
 				}
 			}
 		});
@@ -93,5 +96,13 @@ public class ActionSheetLayout extends FrameLayout {
 		});
 		actionSheetContainer.startAnimation(an);
 		maskView.hide();
+	}
+	
+	public void setOnCancelListener(OnCancelListener CancelListener) {
+		this.CancelListener = CancelListener;
+	}
+
+	public interface OnCancelListener{
+		public void onCancel();
 	}
 }

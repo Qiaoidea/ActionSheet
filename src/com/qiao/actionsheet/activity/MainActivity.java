@@ -6,33 +6,47 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
 import android.widget.Toast;
 
+import com.qiao.actionsheet.R;
 import com.qiao.actionsheet.baoyz.ActionSheet.ItemClikListener;
 import com.qiao.actionsheet.ios6.ActionSheet;
 import com.qiao.actionsheet.ios6.ActionSheet.Action1;
-import com.qiao.actionsheet.ActionSheetLayout;
-import com.qiao.actionsheet.R;
+import com.qiao.actionsheet.linearlayout.ActionSheetLayout;
+import com.qiao.actionsheet.linearlayout.ActionSheetLayout.OnCancelListener;
 
 public class MainActivity extends Activity implements OnClickListener{
 
 	protected ActionSheetLayout actionSheetLayout;
+	private View moreView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initAnimation();
         setContentView(R.layout.activity_main);
+        moreView = findViewById(R.id.btn_more);
 		actionSheetLayout = (ActionSheetLayout) findViewById(R.id.action_sheet_layout);
+		moreView.setOnClickListener(this);
 		findViewById(R.id.fromtop).setOnClickListener(this);
 		findViewById(R.id.frombottom).setOnClickListener(this);
 		findViewById(R.id.fromios).setOnClickListener(this);
 		findViewById(R.id.ios6).setOnClickListener(this);
 		findViewById(R.id.ios7).setOnClickListener(this);
+		actionSheetLayout.setOnCancelListener(new OnCancelListener() {
+			
+			@Override
+			public void onCancel() {
+	    		moreView.startAnimation(hideAnim);
+			}
+		});
     }
     
     @Override
     public boolean onMenuOpened(int featureId, Menu menu) {
-    	menu();
+		showActionSheetLayoutAnim();
     	return false;
     }
 
@@ -44,18 +58,9 @@ public class MainActivity extends Activity implements OnClickListener{
     	return super.onKeyDown(keyCode, event);
     }
     
-    public void menu(){
-    	//直接调用hide()和()来控制显示
-    	if(actionSheetLayout.isShow()){
-    		actionSheetLayout.hide();
-    	}else{
-    		actionSheetLayout.show();
-    	}
-    }
-    
     public void back(){
 		if(actionSheetLayout.isShow()){
-    		actionSheetLayout.hide();
+			showActionSheetLayoutAnim();
     		return ;
     	}
 		final ActionSheet actionSheet = new ActionSheet(MainActivity.this);
@@ -70,6 +75,11 @@ public class MainActivity extends Activity implements OnClickListener{
 		});
     }
 
+    /**
+     * com.qiao.actionsheet.baoyz.ActionSheet
+     * 下午8:06:17
+     * @param resid
+     */
 	public void showActionSheet(int resid) {
 		com.qiao.actionsheet.baoyz.ActionSheet.init(this)
 				.setTitle("This is test title ,do you want do something？")
@@ -97,16 +107,40 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		if(v.getId() == R.id.ios6){
 			showActionSheet(R.style.ActionSheetStyleIOS6);
-			actionSheetLayout.hide();
+			showActionSheetLayoutAnim();
 		}else if(v.getId() == R.id.ios7){
 			showActionSheet(R.style.ActionSheetStyleIOS7);
-			actionSheetLayout.hide();
+			showActionSheetLayoutAnim();
 		}else if(v.getId() == R.id.fromtop){
-			menu();
+			showActionSheetLayoutAnim();
 		}else if(v.getId() == R.id.frombottom){
 			back();
 		}else if( v.getId() == R.id.fromios){
 			showActionSheet(R.style.ActionSheetStyleIOS7);
+		}else if( v.getId() == R.id.btn_more){
+			showActionSheetLayoutAnim();
 		}
+	}
+	
+	public void showActionSheetLayoutAnim(){
+		if(actionSheetLayout.isShow()){
+    		actionSheetLayout.hide();
+    		moreView.startAnimation(hideAnim);
+    	}else{
+    		actionSheetLayout.show();
+    		moreView.startAnimation(showAnim);
+    	}
+	}
+	
+
+	private Animation showAnim;
+	private Animation hideAnim;
+	private void initAnimation() {  
+		showAnim = new RotateAnimation(0f, 45f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+		hideAnim = new RotateAnimation(45f, 0f,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+		showAnim.setDuration(500);
+		showAnim.setFillAfter(true);
+		hideAnim.setDuration(500);
+		hideAnim.setFillAfter(true);
 	}
 }

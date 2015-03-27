@@ -1,5 +1,5 @@
 
-package com.qiao.actionsheet;
+package com.qiao.actionsheet.linearlayout;
 
 import android.content.Context;
 import android.view.View;

@@ -22,8 +22,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.qiao.actionsheet.MaskView;
-import com.qiao.actionsheet.MaskView.MaskListener;
+import com.qiao.actionsheet.linearlayout.MaskView;
+import com.qiao.actionsheet.linearlayout.MaskView.MaskListener;
 import com.qiao.actionsheet.R;
 
 public class ActionSheet extends RelativeLayout {
