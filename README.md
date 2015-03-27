@@ -1,7 +1,7 @@
 # ActionSheet
 参照ios中的 actionsheet样式做的Android ui界面
 
-包含两种界面，四种样式：
+### 包含两种界面，四种样式：
 
 1. 顶部下拉layout菜单 和 底部弹出式ActionSheet菜单
 <p>
@@ -23,7 +23,7 @@
 # 如何使用
 项目本身体积不大，可以引用库或者直接拷贝至自己的项目中去，使用方法很简单
 
-1. 第一种顶部弹出菜单ActionSheetLayout。
+** 1. 第一种顶部弹出菜单ActionSheetLayout。**
     ActionSheetLayout就当做普通的linearlayout来使用，然后调用
     布局中xml
 
@@ -45,7 +45,7 @@
     		actionSheetLayout.show();
     	}
 
-2. 底部弹出菜单ActionSheet
+** 2. 底部弹出菜单ActionSheet **
 使用很简单：
 
 		final ActionSheet actionSheet = new ActionSheet(MainActivity.this);
@@ -59,7 +59,7 @@
 			}
 		});
 
-3. 使用baoyz兄的Actionsheet整改后的
+** 3. 使用baoyz兄的Actionsheet整改后的 **
 具体使用见代码demo
 ```
 		baoyz.qiao.actionsheet.ActionSheet.init(this)
@@ -84,7 +84,8 @@
 				.show();
 ```
 
-其中 **setTheme()** 参数可选 R.style.ActionSheetStyleIOS6 或 R.style.ActionSheetStyleIOS6 。不设置则默认为 R.style.ActionSheetStyleIOS7。注：
+其中,
++ **setTheme()** 参数可选 R.style.ActionSheetStyleIOS6 或 R.style.ActionSheetStyleIOS6 。不设置则默认为 R.style.ActionSheetStyleIOS7。注：
 + 不设置 **setTitle** 则为无title样式
 +  **setCanTouchOutside(false)** 点击选项外无响应，默认为true，点击隐藏
 + 不设置 **setCancelText()** 则不显示取消按钮。其参数有两个，第一个string为显示内容,第二个listener为对应事件
