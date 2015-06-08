@@ -1,6 +1,7 @@
 # ActionSheet
 参照ios中的 actionsheet样式做的Android ui界面
-![效果图](http://img.blog.csdn.net/20150522203925438)
+
+<img src="http://img.blog.csdn.net/20150522203925438"  width="400" alt="效果图"/>
 
 ### 包含两种界面，四种样式：
 
