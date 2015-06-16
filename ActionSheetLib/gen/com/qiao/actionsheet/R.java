@@ -99,8 +99,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
         public static final int action_sheet_button_cancel_click=0x7f020000;
@@ -147,24 +147,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int slt_as_ios7_other_bt_top=0x7f020029;
     }
     public static final class id {
-        public static final int action_sheet_container=0x7f070005;
-        public static final int action_sheet_layout=0x7f070004;
-        public static final int btn_more=0x7f070000;
-        public static final int frombottom=0x7f070002;
-        public static final int fromios=0x7f070003;
-        public static final int fromtop=0x7f070001;
-        public static final int ios6=0x7f070006;
-        public static final int ios7=0x7f070007;
-    }
-    public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int action_sheet_container=0x7f050000;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
     }
     public static final class style {
-        public static final int ActionSheetStyleIOS6=0x7f040000;
-        public static final int ActionSheetStyleIOS7=0x7f040001;
+        public static final int ActionSheetStyleIOS6=0x7f030000;
+        public static final int ActionSheetStyleIOS7=0x7f030001;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -175,11 +165,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f040002;
+        public static final int AppBaseTheme=0x7f030002;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040003;
+        public static final int AppTheme=0x7f030003;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionSheet.
