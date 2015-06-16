@@ -1,10 +1,8 @@
 package com.qiao.actionsheet.ios7;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -21,10 +19,14 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.qiao.actionsheet.R;
 import com.qiao.actionsheet.linearlayout.MaskView;
 import com.qiao.actionsheet.linearlayout.MaskView.MaskListener;
-import com.qiao.actionsheet.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ActionSheet extends RelativeLayout {
 	protected final static long durationMillis = 200;
@@ -33,6 +35,7 @@ public class ActionSheet extends RelativeLayout {
 	protected MaskView maskView;
 	protected LinearLayout actionSheetView;
 	protected Button cancelButton;
+    protected TextView titleTextView;
 
 	public ActionSheet(Context context) {
 		super(context);
@@ -66,10 +69,8 @@ public class ActionSheet extends RelativeLayout {
 
 		actionSheetView = new LinearLayout(getContext());
 		actionSheetView.setOrientation(LinearLayout.VERTICAL);
-		// actionSheetView.setBackgroundResource(R.drawable.actionsheet_background);
-		// actionSheetView.setBackgroundResource(R.color.white);
 		actionSheetView.setVisibility(View.GONE);
-		RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+		LayoutParams rlp = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		rlp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
 		rlp.leftMargin = rlp.rightMargin = (int)applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 8);
 		addView(actionSheetView, rlp);
@@ -96,15 +97,23 @@ public class ActionSheet extends RelativeLayout {
 		setFocusableInTouchMode(true);
 	}
 
+    public void show(String title,String[] displayStrings, Action1<Integer> callback) {
+        show(title,displayStrings, null, callback, null, true);
+    }
+
 	public void show(String[] displayStrings, Action1<Integer> callback) {
-		show(displayStrings, null, callback, null, true);
+		show(null,displayStrings, null, callback, null, true);
+	}
+
+	public void show(String title,String[] displayStrings, final Action1<Integer> callback, boolean hasCancelButton) {
+		show(title,displayStrings, null, callback, null, hasCancelButton);
 	}
 
 	public void show(String[] displayStrings, final Action1<Integer> callback, boolean hasCancelButton) {
-		show(displayStrings, null, callback, null, hasCancelButton);
+		show(null,displayStrings, null, callback, null, hasCancelButton);
 	}
 
-	public void show(String[] displayStrings, boolean[] hide, final Action1<Integer> callback, final Func<Boolean> onCancelAction, boolean hasCancelButton) {
+	public void show(String title,String[] displayStrings, boolean[] hide, final Action1<Integer> callback, final Func<Boolean> onCancelAction, boolean hasCancelButton) {
 		if (getParent() == null) {
 			WindowManager.LayoutParams wlp = new WindowManager.LayoutParams();
 			wlp.type = WindowManager.LayoutParams.TYPE_APPLICATION;
@@ -119,6 +128,21 @@ public class ActionSheet extends RelativeLayout {
 
 		actionSheetView.setVisibility(View.VISIBLE);
 		actionSheetView.removeAllViews();
+
+
+        if(null!=title&&!title.trim().equals("")){
+            titleTextView = new TextView(getContext());
+            titleTextView.setBackgroundColor(Color.TRANSPARENT);
+            titleTextView.setGravity(Gravity.CENTER);
+            titleTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 12);
+            titleTextView.setText(title);
+            titleTextView.setTextColor(Color.WHITE);
+
+            int mrg = (int) applyDimension(getContext(), TypedValue.COMPLEX_UNIT_DIP, 5);
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+            lp.setMargins(0, mrg, 0, mrg);
+            actionSheetView.addView(titleTextView,lp);
+        }
 
 		List<Button> buttons = new ArrayList<Button>();
 		LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
