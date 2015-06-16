@@ -1,5 +1,5 @@
 # ActionSheet
-参照ios中的 actionsheet样式做的Android ui界面
+参照ios中的 actionsheet样式做的Android ui界面。详解参见博客[仿IOS控件之ActionSheet](http://blog.csdn.net/qiaoidea/article/details/46417747)
 
 <img src="http://img.blog.csdn.net/20150522203925438"  width="400" alt="效果图"/>
 

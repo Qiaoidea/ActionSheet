@@ -14,147 +14,147 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int actionSheetBackground=0x7f010001;
+        public static int actionSheetBackground=0x7f010001;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int actionSheetPadding=0x7f01000a;
+        public static int actionSheetPadding=0x7f01000a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int actionSheetStyle=0x7f010000;
+        public static int actionSheetStyle=0x7f010000;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int actionSheetTextSize=0x7f01000d;
+        public static int actionSheetTextSize=0x7f01000d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int bottomItemBackground=0x7f010005;
+        public static int bottomItemBackground=0x7f010005;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int cancelButtonBackground=0x7f010002;
+        public static int cancelButtonBackground=0x7f010002;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int cancelButtonMarginTop=0x7f01000c;
+        public static int cancelButtonMarginTop=0x7f01000c;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int cancelButtonTextColor=0x7f010007;
+        public static int cancelButtonTextColor=0x7f010007;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int itemSpacing=0x7f01000b;
+        public static int itemSpacing=0x7f01000b;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int itemTextColor=0x7f010009;
+        public static int itemTextColor=0x7f010009;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int middleItemBackground=0x7f010004;
+        public static int middleItemBackground=0x7f010004;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int singleItemBackground=0x7f010006;
+        public static int singleItemBackground=0x7f010006;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int titleColor=0x7f010008;
+        public static int titleColor=0x7f010008;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int topItemBackground=0x7f010003;
+        public static int topItemBackground=0x7f010003;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static int activity_horizontal_margin=0x7f040000;
+        public static int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int action_sheet_button_cancel_click=0x7f020000;
-        public static final int action_sheet_button_cancel_normal=0x7f020001;
-        public static final int action_sheet_button_delete_click=0x7f020002;
-        public static final int action_sheet_button_delete_normal=0x7f020003;
-        public static final int actionsheet_black_btn=0x7f020004;
-        public static final int actionsheet_bottom_normal=0x7f020005;
-        public static final int actionsheet_bottom_pressed=0x7f020006;
-        public static final int actionsheet_button1=0x7f020007;
-        public static final int actionsheet_button1_normal=0x7f020008;
-        public static final int actionsheet_button1_press=0x7f020009;
-        public static final int actionsheet_button_bottom=0x7f02000a;
-        public static final int actionsheet_button_bottom_n=0x7f02000b;
-        public static final int actionsheet_button_bottom_p=0x7f02000c;
-        public static final int actionsheet_button_center=0x7f02000d;
-        public static final int actionsheet_button_center_n=0x7f02000e;
-        public static final int actionsheet_button_center_p=0x7f02000f;
-        public static final int actionsheet_button_single=0x7f020010;
-        public static final int actionsheet_button_single_n=0x7f020011;
-        public static final int actionsheet_button_single_p=0x7f020012;
-        public static final int actionsheet_button_top=0x7f020013;
-        public static final int actionsheet_button_top_n=0x7f020014;
-        public static final int actionsheet_button_top_p=0x7f020015;
-        public static final int actionsheet_middle_normal=0x7f020016;
-        public static final int actionsheet_middle_pressed=0x7f020017;
-        public static final int actionsheet_red_btn=0x7f020018;
-        public static final int actionsheet_single_normal=0x7f020019;
-        public static final int actionsheet_single_pressed=0x7f02001a;
-        public static final int actionsheet_top_normal=0x7f02001b;
-        public static final int actionsheet_top_pressed=0x7f02001c;
-        public static final int as_bg_ios6=0x7f02001d;
-        public static final int as_cancel_bt_bg=0x7f02001e;
-        public static final int as_other_bt_bg=0x7f02001f;
-        public static final int btn_more=0x7f020020;
-        public static final int ic_launcher=0x7f020021;
-        public static final int menu0=0x7f020022;
-        public static final int menu1=0x7f020023;
-        public static final int menu2=0x7f020024;
-        public static final int slt_as_ios7_cancel_bt=0x7f020025;
-        public static final int slt_as_ios7_other_bt_bottom=0x7f020026;
-        public static final int slt_as_ios7_other_bt_middle=0x7f020027;
-        public static final int slt_as_ios7_other_bt_single=0x7f020028;
-        public static final int slt_as_ios7_other_bt_top=0x7f020029;
+        public static int action_sheet_button_cancel_click=0x7f020000;
+        public static int action_sheet_button_cancel_normal=0x7f020001;
+        public static int action_sheet_button_delete_click=0x7f020002;
+        public static int action_sheet_button_delete_normal=0x7f020003;
+        public static int actionsheet_black_btn=0x7f020004;
+        public static int actionsheet_bottom_normal=0x7f020005;
+        public static int actionsheet_bottom_pressed=0x7f020006;
+        public static int actionsheet_button1=0x7f020007;
+        public static int actionsheet_button1_normal=0x7f020008;
+        public static int actionsheet_button1_press=0x7f020009;
+        public static int actionsheet_button_bottom=0x7f02000a;
+        public static int actionsheet_button_bottom_n=0x7f02000b;
+        public static int actionsheet_button_bottom_p=0x7f02000c;
+        public static int actionsheet_button_center=0x7f02000d;
+        public static int actionsheet_button_center_n=0x7f02000e;
+        public static int actionsheet_button_center_p=0x7f02000f;
+        public static int actionsheet_button_single=0x7f020010;
+        public static int actionsheet_button_single_n=0x7f020011;
+        public static int actionsheet_button_single_p=0x7f020012;
+        public static int actionsheet_button_top=0x7f020013;
+        public static int actionsheet_button_top_n=0x7f020014;
+        public static int actionsheet_button_top_p=0x7f020015;
+        public static int actionsheet_middle_normal=0x7f020016;
+        public static int actionsheet_middle_pressed=0x7f020017;
+        public static int actionsheet_red_btn=0x7f020018;
+        public static int actionsheet_single_normal=0x7f020019;
+        public static int actionsheet_single_pressed=0x7f02001a;
+        public static int actionsheet_top_normal=0x7f02001b;
+        public static int actionsheet_top_pressed=0x7f02001c;
+        public static int as_bg_ios6=0x7f02001d;
+        public static int as_cancel_bt_bg=0x7f02001e;
+        public static int as_other_bt_bg=0x7f02001f;
+        public static int btn_more=0x7f020020;
+        public static int ic_launcher=0x7f020021;
+        public static int menu0=0x7f020022;
+        public static int menu1=0x7f020023;
+        public static int menu2=0x7f020024;
+        public static int slt_as_ios7_cancel_bt=0x7f020025;
+        public static int slt_as_ios7_other_bt_bottom=0x7f020026;
+        public static int slt_as_ios7_other_bt_middle=0x7f020027;
+        public static int slt_as_ios7_other_bt_single=0x7f020028;
+        public static int slt_as_ios7_other_bt_top=0x7f020029;
     }
     public static final class id {
-        public static final int action_sheet_container=0x7f050000;
+        public static int action_sheet_container=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
+        public static int app_name=0x7f060000;
     }
     public static final class style {
-        public static final int ActionSheetStyleIOS6=0x7f030000;
-        public static final int ActionSheetStyleIOS7=0x7f030001;
+        public static int ActionSheetStyleIOS6=0x7f030000;
+        public static int ActionSheetStyleIOS7=0x7f030001;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -165,11 +165,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f030002;
+        public static int AppBaseTheme=0x7f030002;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f030003;
+        public static int AppTheme=0x7f030003;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionSheet.
@@ -223,7 +223,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:actionSheetBackground
         */
-        public static final int ActionSheet_actionSheetBackground = 0;
+        public static int ActionSheet_actionSheetBackground = 0;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#actionSheetPadding}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -236,7 +236,7 @@ Available units are: px (pixels), dp (density-independent pixels), sp (scaled pi
 in (inches), mm (millimeters).
           @attr name com.qiao.actionsheet:actionSheetPadding
         */
-        public static final int ActionSheet_actionSheetPadding = 9;
+        public static int ActionSheet_actionSheetPadding = 9;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#actionSheetTextSize}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -249,7 +249,7 @@ Available units are: px (pixels), dp (density-independent pixels), sp (scaled pi
 in (inches), mm (millimeters).
           @attr name com.qiao.actionsheet:actionSheetTextSize
         */
-        public static final int ActionSheet_actionSheetTextSize = 12;
+        public static int ActionSheet_actionSheetTextSize = 12;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#bottomItemBackground}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -261,7 +261,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:bottomItemBackground
         */
-        public static final int ActionSheet_bottomItemBackground = 4;
+        public static int ActionSheet_bottomItemBackground = 4;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#cancelButtonBackground}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -273,7 +273,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:cancelButtonBackground
         */
-        public static final int ActionSheet_cancelButtonBackground = 1;
+        public static int ActionSheet_cancelButtonBackground = 1;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#cancelButtonMarginTop}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -286,7 +286,7 @@ Available units are: px (pixels), dp (density-independent pixels), sp (scaled pi
 in (inches), mm (millimeters).
           @attr name com.qiao.actionsheet:cancelButtonMarginTop
         */
-        public static final int ActionSheet_cancelButtonMarginTop = 11;
+        public static int ActionSheet_cancelButtonMarginTop = 11;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#cancelButtonTextColor}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -298,7 +298,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:cancelButtonTextColor
         */
-        public static final int ActionSheet_cancelButtonTextColor = 6;
+        public static int ActionSheet_cancelButtonTextColor = 6;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#itemSpacing}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -311,7 +311,7 @@ Available units are: px (pixels), dp (density-independent pixels), sp (scaled pi
 in (inches), mm (millimeters).
           @attr name com.qiao.actionsheet:itemSpacing
         */
-        public static final int ActionSheet_itemSpacing = 10;
+        public static int ActionSheet_itemSpacing = 10;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#itemTextColor}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -323,7 +323,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:itemTextColor
         */
-        public static final int ActionSheet_itemTextColor = 8;
+        public static int ActionSheet_itemTextColor = 8;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#middleItemBackground}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -335,7 +335,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:middleItemBackground
         */
-        public static final int ActionSheet_middleItemBackground = 3;
+        public static int ActionSheet_middleItemBackground = 3;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#singleItemBackground}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -347,7 +347,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:singleItemBackground
         */
-        public static final int ActionSheet_singleItemBackground = 5;
+        public static int ActionSheet_singleItemBackground = 5;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#titleColor}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -359,7 +359,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:titleColor
         */
-        public static final int ActionSheet_titleColor = 7;
+        public static int ActionSheet_titleColor = 7;
         /**
           <p>This symbol is the offset where the {@link com.qiao.actionsheet.R.attr#topItemBackground}
           attribute's value can be found in the {@link #ActionSheet} array.
@@ -371,7 +371,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.qiao.actionsheet:topItemBackground
         */
-        public static final int ActionSheet_topItemBackground = 2;
+        public static int ActionSheet_topItemBackground = 2;
         /** Attributes that can be used with a ActionSheets.
            <p>Includes the following attributes:</p>
            <table>
@@ -394,6 +394,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.qiao.actionsheet:actionSheetStyle
         */
-        public static final int ActionSheets_actionSheetStyle = 0;
+        public static int ActionSheets_actionSheetStyle = 0;
     };
 }
